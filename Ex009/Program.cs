@@ -1,4 +1,6 @@
-﻿namespace Ex009
+﻿using System.ComponentModel.Design;
+
+namespace Ex009
 {
     internal class Program
     {
@@ -27,7 +29,14 @@
 
             {
                 Console.WriteLine("Os valores informados não formam um triângulo: ");
+                if ((ladoA == ladoB) && (ladoB == ladoC))
+              { 
+
+               Console.WriteLine("E ele é um triângulo Equilátero. ");
             }
+              }
+            Console.WriteLine("Os valores informados não formum un triângulo. ");
+      
         }
     }
 }
